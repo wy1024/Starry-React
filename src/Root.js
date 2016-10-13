@@ -5,6 +5,8 @@ import ContactDetail from './components/ContactDetail';
 
 import App from './components/App';
 
+import HomePage from './components/HomePage';
+
 class Root extends Component {
   
   // We need to provide a list of routes
@@ -13,7 +15,8 @@ class Root extends Component {
   render() {
     return (
       <Router history={this.props.history}>
-        <Route path='/' component={App}>
+        <Route path='/' component={HomePage}></Route>
+        <Route path='/register' component={App}>
           <IndexRoute component={Index}/>
           <Route path='/contact/:id' component={ContactDetail} />
         </Route>
