@@ -15,10 +15,13 @@ class HeaderComponent extends Component {
   }
 
   login() {
+    var options = {
+      dict: 'zh'
+    };
     // We can call the show method from Auth0Lock,
     // which is passed down as a prop, to allow
     // the user to log in
-    this.props.lock.show((err, profile, token) => {
+    this.props.lock.show(options, (err, profile, token) => {
       if (err) {
         alert(err);
         return;
