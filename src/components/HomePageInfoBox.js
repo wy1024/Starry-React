@@ -19,9 +19,9 @@ class HomePageInfoBoxComponent extends Component {
 
     return (
       <div>
-        <Box width={thirdWidth} wrap="nowrap">
+        <Box width={thirdWidth} wrap="nowrap" column>
           <h3 style={{color: this.props.color}}>{this.props.title}</h3>
-          <Container wrap="nowrap" border={border} padding={infoBoxPadding} marginRight={infoBoxMargin}>
+          <Container wrap="nowrap" border={border} padding={infoBoxPadding} marginRight={infoBoxMargin} column>
             <FontAwesome
               name={this.props.icon}
               size='2x'

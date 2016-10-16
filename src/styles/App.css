@@ -41,6 +41,11 @@ ul li a {
     height: 500px;
 }
 
+.img-circle {
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+}
 
 /* Ids */
 #pageintro { 
